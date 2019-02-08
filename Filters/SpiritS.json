@@ -18,8 +18,8 @@
 			"SetBorderColor": "{unique}",
 			"SetTextColor": "{unique}",
 			"SetBackgroundColor": "{bg-default}",
-			"MiniMapIcon": {"Size": 0, "Colour": "yellow", "Shape": "star"},
-			"PlayEffect": "yellow"
+			"MiniMapIcon": {"Size": 0, "Colour": "Yellow", "Shape": "Star"},
+			"PlayEffect": "Yellow"
 		},
 		
 		"Magic":
