@@ -106,6 +106,7 @@ The resulting filter will contain separate entries for
 ### Example 3: TODO: Filter Expansion, with custom properties for action name expansion
 
 
+## Tasks
 - [x] Action Cascading
 - [x] Filter Expansion
 - [x] Support for Border/Background/Text item colouring
