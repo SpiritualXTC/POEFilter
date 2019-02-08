@@ -1,0 +1,86 @@
+{
+	"colour":
+	{
+		"bg-default": {"r": 0, "g": 0, "b": 0, "a": 192},
+		
+		"normal": {"r": 200, "g": 200, "b": 200, "a": 255},
+		"magic": {"r": 136, "g": 136, "b": 255, "a": 255},
+		"rare": {"r": 255, "g": 255, "b": 119, "a": 255},	
+		"unique": {"r": 175, "g": 96, "b": 37, "a": 255},
+		
+		"currency": {"r": 170, "g": 158, "b": 130, "a": 255}
+		
+	},
+
+	"action":
+	{
+		"Unique":
+		{
+			"SetBorderColor": "{unique}",
+			"SetTextColor": "{unique}",
+			"SetBackgroundColor": "{bg-default}",
+			"MiniMapIcon": {"Size": 0, "Colour": "yellow", "Shape": "star"},
+			"PlayEffect": "yellow"
+		},
+		
+		"Magic":
+		{
+			"SetBorderColor": "{magic}",
+			"SetTextColor": "{magic}",
+			"SetBackgroundColor": "{bg-default}"
+		}
+	},
+	
+	"function":
+	[
+		{"SetTextColor": "224 - ({INDEX} * 12) 140 140"}
+	],		
+	
+
+	"filter":
+	{
+
+	
+		"flask":
+		{
+			"Class": ["Life Flask", "Mana Flask"],
+			"Rarity":["Normal", "Magic"],
+			"subdata": 
+			[
+				{"BaseType": ["Small", "Medium", "Large"], "ItemLevel": ["< 12"], "FlaskTier": 1},
+				{"BaseType": ["Greater", "Grand"], "ItemLevel": ["< 25"]},
+				{"BaseType": ["Giant", "Colossal"], "ItemLevel": ["< 35"]},
+				{"BaseType": ["Sacred", "Hallowed"], "ItemLevel": ["< 50"]},
+				{"BaseType": ["Sancitified", "Divine"], "ItemLevel": ["< 65"]},
+				{"BaseType": ["Eternal"], "ItemLevel": [">= 60"], "FlaskTier": 6}
+			],
+			
+			"action": [["{Rarity}", "{FlaskTier}"]]
+		},
+		"unique-flask":
+		{
+			"Class": "Flask",
+			"Rarity": "Unique",
+			
+			"action":	["Unique"] 
+		},
+		
+		
+		"chromatic":
+		{
+			"SocketGroup": "RGB"
+		},
+		"white-socket":
+		{
+			"SocketGroup": "W"
+		},
+		
+		"hide-all":
+		{
+			"Hide":["True"]
+		}
+	}
+	
+	
+		
+}
