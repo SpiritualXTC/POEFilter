@@ -24,17 +24,17 @@ Filter options will still need to be defined in the JSON file, but actions will 
 	(Including MiniMapIcon and PlayEffect)
 * 100% JSON Loader
 * Cascading action "styles"
-	- Allows multiple filters to reuse an action "styles"
-	- Allows a single filter to combine multiple "styles" (See Example Below)
+	* Allows multiple filters to reuse an action "styles"
+	* Allows a single filter to combine multiple "styles" (See Example Below)
 * Action name expansion
-	- Allows the action to be set based on properties from the filter expansion
-	- Custom properties for action name expansion
+	* Allows the action to be set based on properties from the filter expansion
+	* Custom properties for action name expansion
 * Filter Expansion
-	- A group of filters with mostly the same conditions can be generated with a simple JSON objec
+	* A group of filters with mostly the same conditions can be generated with a simple JSON objec
 * Colour Constants
 
 
-# TODO:
+## TODO:
 * Support for PlayAlertSound/PlayAlertSoundPositional/DisableAlertSound/CustomAlertSound
 * Planned support for a file loader that will parse a file that resembles a standard filter, however
 with changes allowing for the filter expansions and action cascading
@@ -45,7 +45,10 @@ with changes allowing for the filter expansions and action cascading
 
 
 
-## Example (Coming Soon, in the meantime look in the **Filters** folder for testing examples
+## Examples 
+(Coming Soon, in the meantime look in the **Filters** folder for the main testing example - currently incomplete itself)
+It generates an item filter for all the flasks, with individual filters for Class: Life or Mana, Rarity: Normal/Magic with user-defined tiering.
+Results in 24 filters for the standard flasks. (Hybrid flasks aren't included yet)
 
 ### Example 1: Corrupted Uniques (To be honest this hasn't been tested :P)
 This is a fairly trivial example.
@@ -92,6 +95,7 @@ The first one for corrupted uniques, that shares the same actions as non-corrupt
 }
 ```
 Note: The twin brackets -[[- around the action are required so it doesn't expand the filter
+
 Note 2: After boolean conditions generate properties, this could be condensed into a single option
 
 ### Example 2: TODO: Action name expansion
