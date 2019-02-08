@@ -77,7 +77,7 @@ The first one for corrupted uniques, that shares the same actions as non-corrupt
 	},
 	"filter":
 	{
-		"corrupted-unique"
+		"corrupted-unique":
 		{
 			"Rarity": "Unique",
 			"Corrupted": "True",
